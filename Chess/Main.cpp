@@ -4,7 +4,7 @@
 #include "debug.h"
 #include <time.h>
 
-Game* current_game = NULL; //fix from globab
+Game* current_game = NULL;
 
 bool isMoveValid(Chess::Position present, Chess::Position future, Chess::EnPassant* S_enPassant, Chess::Castling* S_castling, Chess::Promotion* S_promotion)
 {
@@ -610,7 +610,7 @@ void movePiece(void)
     return;
 }
 
-void saveGame(void) //the function I plan on adding
+void saveGame(void)
 {
     string file_name;
     cout << "Type file name to be saved (no extension): ";
